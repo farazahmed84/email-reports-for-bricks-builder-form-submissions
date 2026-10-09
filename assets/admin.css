@@ -1,0 +1,56 @@
+.bwsr-wrap {
+	max-width: 1180px;
+}
+
+.bwsr-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+	gap: 20px;
+	align-items: start;
+}
+
+.bwsr-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	margin-top: 16px;
+	padding: 20px 24px;
+}
+
+.bwsr-card h2 {
+	border-bottom: 1px solid #e2e4e7;
+	font-size: 18px;
+	margin: 0 0 16px;
+	padding-bottom: 12px;
+}
+
+.bwsr-card select,
+.bwsr-card input[type="text"],
+.bwsr-card textarea {
+	width: 100%;
+	max-width: 520px;
+}
+
+.bwsr-status dt {
+	font-weight: 600;
+	margin-top: 14px;
+}
+
+.bwsr-status dd {
+	margin: 4px 0 0;
+}
+
+.bwsr-checkpoints {
+	margin: 4px 0 0 18px;
+}
+
+.bwsr-manual-card {
+	max-width: 760px;
+}
+
+@media screen and (max-width: 900px) {
+	.bwsr-grid {
+		grid-template-columns: 1fr;
+	}
+}
